@@ -3,4 +3,5 @@ A traditional and basic RAG implementation without pipeline without using any po
 
 
 Updated: 4/27/2026
+
 First Code: 1 year ago.
