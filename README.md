@@ -1,4 +1,4 @@
-# Retrieval-Augmented-Generation-RAG-From-Scratch
+# Retrieval-Augmented-Generation-RAG_Basic
 A traditional and basic RAG implementation without pipeline without using any popular libraries such as Langchain or Llamaindex
 
 
