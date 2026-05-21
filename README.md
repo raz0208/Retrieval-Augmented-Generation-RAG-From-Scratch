@@ -5,6 +5,7 @@ This is a repository to practes all RAG methods. The RAG applications exist in s
 **This repo contains:**
  - Basic RAG Pipeline
  - Traditional RAG Pipeline with Langchain, Groq API, and llama-3.1
+ - RAG
 
 
 **Repo Basic Information:**
