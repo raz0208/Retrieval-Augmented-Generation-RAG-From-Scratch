@@ -1,0 +1,16 @@
+Machine Learning Basics
+
+Machine Learning (ML) is a branch of Artificial Intelligence that enables computers to learn from data and improve their performance without being explicitly programmed. Instead of following fixed instructions, machine learning systems identify patterns in data and make predictions or decisions based on those patterns. This technology is widely used in modern applications such as recommendation systems, image recognition, and voice assistants.
+
+Machine learning works by training algorithms using large datasets. During training, the model analyzes the data, learns relationships, and adjusts itself to improve accuracy. Once trained, the model can process new data and provide predictions or classifications. Popular programming languages like Python and frameworks such as Scikit-learn are commonly used to build machine learning applications.
+
+Types of Machine Learning
+ - Supervised Learning
+ - Unsupervised Learning
+ - Reinforcement Learning
+ - Semi-Supervised Learning
+ - Deep Learning
+
+Applications of Machine Learning
+
+Machine learning is used in many industries to solve real-world problems efficiently. In healthcare, it helps diagnose diseases and predict patient outcomes. In finance, ML systems detect fraud and analyze market trends. E-commerce platforms use machine learning for personalized recommendations, while self-driving cars rely on it for object detection and navigation. As technology continues to evolve, machine learning is becoming an essential part of everyday life and modern innovation.
