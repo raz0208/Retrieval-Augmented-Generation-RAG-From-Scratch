@@ -1,3 +1,4 @@
+# Import necessary libraries for document loading
 from pathlib import Path
 from typing import List, Any
 from langchain_community.document_loaders import TextLoader, PyPDFLoader, CSVLoader
@@ -5,7 +6,7 @@ from langchain_community.document_loaders.excel import UnstructuredExcelLoader
 from langchain_community.document_loaders import JSONLoader
 from langchain_community.document_loaders import Docx2txtLoader
 
-
+# Function to load all supported documents from a specified directory
 def load_all_documents(data_dir: str) -> List[Any]:
     """
     Load all supported files from the specified directory and convert them to langchain documents structure.

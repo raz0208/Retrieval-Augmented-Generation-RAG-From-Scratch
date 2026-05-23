@@ -1,5 +1,7 @@
+# Import required libraries
 from src.document_loader import load_all_documents
 
+#Implement the main function to run the RAG pipeline application
 if __name__ == "__main__":
     print("[INFO] Starting document loading process...")
     documents = load_all_documents("data")
