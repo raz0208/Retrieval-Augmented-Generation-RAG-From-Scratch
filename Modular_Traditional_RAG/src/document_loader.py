@@ -99,6 +99,19 @@ def load_all_documents(data_dir: str) -> List[Any]:
             documents.extend(loaded)
         except Exception as e:
             print(f"[ERROR] Failed to load .docx file {docx_file}: {e}")
+    
+    # Load html files
+    html_files = list(data_path.glob("**/*.html"))
+    print(f"[DEBUG] Found {len(html_files)} .html files: {[str(file) for file in html_files]}")
+    for html_file in html_files:
+        print(f"[DEBUG] Loading .html file: {html_file}")
+        try:
+            loader = UnstructuredHTMLLoader(str(html_file))
+            loaded = loader.load()
+            print(f"[DEBUG] Loaded {len(loaded)} html documents from {html_file}")
+            documents.extend(loaded)
+        except Exception as e:
+            print(f"[ERROR] Failed to load .html file {html_file}: {e}")
 
     print(f"\n[INFO] Total documents loaded: {len(documents)}")
     return documents
