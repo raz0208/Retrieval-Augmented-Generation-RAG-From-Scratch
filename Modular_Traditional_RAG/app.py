@@ -16,8 +16,9 @@ if __name__ == "__main__":
     
     # Implement Chunking and Embedding
     print("\n[INFO] Initializing chunking documents and embedding pipeline...")
-    chunks = EmbeddingPipeline().chunk_document(documents)
+    embedding_pipeline = EmbeddingPipeline()
+    chunks = embedding_pipeline.chunk_document(documents)
     print("[INFO] Generating embeddings for chunks...")
-    embeddingsVectors = EmbeddingPipeline().generate_embeddings(chunks)
+    embeddingsVectors = embedding_pipeline.generate_embeddings(chunks)
     print(f"[INFO] Generated embedding vectors for {len(chunks)} chunks.")
     print(embeddingsVectors)
