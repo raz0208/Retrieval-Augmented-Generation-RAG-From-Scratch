@@ -5,9 +5,10 @@
 import os
 import numpy as np
 from typing import List, Any
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+#from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from sentence_transformers import SentenceTransformer
-from src.data_loader import load_all_documents
+from src.document_loader import load_all_documents
 
 # Embedding class to handle document chunking and embedding
 class EmbeddingPipeline:
@@ -41,7 +42,7 @@ class EmbeddingPipeline:
             chunk_size=self.chunk_size, 
             chunk_overlap=self.chunk_overlap,
             length_function=len,
-            seperators=["\n\n", "\n", " ", ""]
+            separators=["\n\n", "\n", " ", ""]
         )
         chunks = text_splitter.split_documents(documents)
         print(f"[INFO] Split {len(documents)} document into {len(chunks)} chunks.")
