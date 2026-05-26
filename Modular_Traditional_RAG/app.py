@@ -1,6 +1,6 @@
 # Import required libraries
 from src.document_loader import load_all_documents
-from src.embedding import EmbeddingPipeline
+from src.vector_store import FaissVectorStore
 
 # Implement the main function to run the RAG pipeline application
 if __name__ == "__main__":
